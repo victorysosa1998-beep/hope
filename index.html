@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope for Every Child – Fighting for Children's Rights Worldwide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- URGENT BANNER -->
+<div class="urgent-banner">
+  <span class="urgent-badge">URGENT</span>
+  <span>Gaza Crisis: 95% of aid organizations forced to suspend services. Children need you now.</span>
+  <a href="donate.html">Donate Crypto Now <i class="fa fa-arrow-right"></i></a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fa fa-heart"></i></div>
+      <div class="logo-text">Hope for Every Child<span>International</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="news.html">News</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html" class="btn-donate"><i class="fab fa-bitcoin"></i> Donate Crypto</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a>
+    <a href="work.html"><i class="fa fa-hands-helping"></i> Our Work</a>
+    <a href="news.html"><i class="fa fa-newspaper"></i> News</a>
+    <a href="get-involved.html"><i class="fa fa-users"></i> Get Involved</a>
+    <a href="donate.html"><i class="fab fa-bitcoin"></i> Donate with Crypto</a>
+  </div>
+</nav>
+
+<!-- HERO SLIDESHOW -->
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active">
+      <!-- REPLACE IMAGE 1: change the src below to your own image URL -->
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&auto=format&fit=crop&q=80" alt="Children in need">
+    </div>
+    <div class="hero-slide">
+      <!-- REPLACE IMAGE 2: change the src below to your own image URL -->
+      <img src="https://images.unsplash.com/photo-1542810104-13345b3ced4e?w=1600&auto=format&fit=crop&q=80" alt="Child refugee">
+    </div>
+    <div class="hero-slide">
+      <!-- REPLACE IMAGE 3: change the src below to your own image URL -->
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&auto=format&fit=crop&q=80" alt="Children learning">
+    </div>
+    <div class="hero-slide">
+      <!-- REPLACE IMAGE 4: change the src below to your own image URL -->
+      <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1600&auto=format&fit=crop&q=80" alt="Child health">
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fighting for Children's Rights Since 1989</div>
+    <h1>No Child Should Suffer in <em>Silence</em></h1>
+    <p>Nearly <strong>300 million people</strong> need humanitarian assistance this year. We will reach <strong>15.9 million children</strong> across 46 countries — but only with your help.</p>
+    <div class="hero-actions">
+      <a href="donate.html" class="btn-primary"><i class="fab fa-bitcoin"></i> Donate Cryptocurrency</a>
+      <!-- "Our Story" now links to About Us — no video modal -->
+      <a href="about.html" class="btn-ghost"><i class="fa fa-heart"></i> Our Story</a>
+    </div>
+  </div>
+  <div class="slide-dots" id="slideDots">
+    <button class="dot active" onclick="goToSlide(0)"></button>
+    <button class="dot" onclick="goToSlide(1)"></button>
+    <button class="dot" onclick="goToSlide(2)"></button>
+    <button class="dot" onclick="goToSlide(3)"></button>
+  </div>
+  <div class="hero-scroll-indicator">
+    <i class="fa fa-chevron-down"></i>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- IMPACT BAR -->
+<section class="impact-bar">
+  <div class="container impact-grid">
+    <div class="impact-item">
+      <span class="impact-num">15.9M</span>
+      <span class="impact-label">Children Reached 2024</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">46</span>
+      <span class="impact-label">Countries</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">300M+</span>
+      <span class="impact-label">Need Aid Now</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">35+</span>
+      <span class="impact-label">Years of Service</span>
+    </div>
+  </div>
+</section>
+
+<!-- CRISIS SPOTLIGHT -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow"><i class="fa fa-exclamation-triangle"></i> Active Crisis Zones</span>
+      <h2 class="section-title">Children Are in Crisis Right Now</h2>
+      <p class="section-subtitle">From Gaza to Afghanistan, millions of children are caught in conflict, displacement, and disaster. Every second counts.</p>
+    </div>
+    <div class="four-col">
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Gaza crisis image -->
+          <img src="images/gaza.png" alt="Gaza crisis">
+          <span class="cause-tag" style="background:#D0021B;">EMERGENCY</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Gaza: Children Without Aid</h3>
+          <p>95% of aid organizations suspended. 1.1 million children face acute malnutrition.</p>
+          <a href="donate.html" class="cause-link">Help Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Afghanistan image -->
+          <img src="images/peggy_marco-poverty-1028841_1920.jpg" alt="Afghanistan">
+          <span class="cause-tag" style="background:#F5A623;">DISPLACEMENT</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Afghan Children Fleeing Pakistan</h3>
+          <p>545,000 children returned to a country with no schools, no hospitals, no hope.</p>
+          <a href="donate.html" class="cause-link">Help Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Sudan famine image -->
+          <img src="images/sudan.png" alt="Sudan famine">
+          <span class="cause-tag" style="background:#D0021B;">FAMINE</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Sudan: Famine &amp; War</h3>
+          <p>The world's worst hunger crisis. Over 700,000 children on the brink of starvation.</p>
+          <a href="donate.html" class="cause-link">Help Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Climate crisis image -->
+          <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&auto=format&fit=crop" alt="Climate disaster">
+          <span class="cause-tag" style="background:#2563EB;">CLIMATE</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Climate Disasters Hitting Kids Hardest</h3>
+          <p>Floods, droughts, cyclones. Children bear 88% of the climate crisis burden.</p>
+          <a href="donate.html" class="cause-link">Help Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED STORY -->
+<section class="section-pad section-light">
+  <div class="container">
+    <div class="story-feature">
+      <!-- REPLACE: Featured story image -->
+      <img src="images/amina.png" alt="Child story">
+      <div class="story-body">
+        <span class="eyebrow eyebrow-gold"><i class="fa fa-star"></i> Impact Story</span>
+        <h2 class="display">Amina Was 8 When Her Village Was Destroyed. Today She Teaches 40 Children.</h2>
+        <p>In 2019, Amina fled South Sudan with nothing but the dress on her back. Our education team found her in a refugee camp — traumatized, malnourished, and unable to speak. Five years later, she completed teacher training and now runs a classroom for displaced children in the very same camp where she once arrived broken.</p>
+        <button class="btn-primary" onclick="openStoryModal()" style="border:none;cursor:pointer;">
+          <i class="fa fa-book-open"></i> Read Her Story
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMINA STORY MODAL -->
+<div id="storyModal" class="story-modal-overlay" onclick="closeStoryModal(event)" role="dialog" aria-modal="true" aria-label="Amina's Story">
+  <div class="story-modal-box">
+
+    <!-- Close button -->
+    <button class="story-modal-close" onclick="closeStoryModal()" aria-label="Close story">&times;</button>
+
+    <!-- Hero image with overlay headline -->
+    <div class="story-modal-hero">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&auto=format&fit=crop&q=80" alt="Amina">
+      <div class="story-modal-hero-overlay">
+        <span class="story-modal-tag"><i class="fa fa-star"></i> Impact Story · South Sudan</span>
+        <h2 class="story-modal-headline">"I Was Nothing. Now I Am Someone's Teacher."</h2>
+      </div>
+    </div>
+
+    <!-- Scrollable story body -->
+    <div class="story-modal-body">
+
+      <div class="story-modal-meta">
+        <span><i class="fa fa-calendar"></i> March 2025</span>
+        <span><i class="fa fa-map-marker-alt"></i> Kakuma Refugee Camp, Kenya</span>
+        <span><i class="fa fa-pen"></i> Field Report by Hope for Every Child</span>
+      </div>
+
+      <p class="story-modal-lead">Amina Ajak was eight years old the morning the soldiers came. She didn't know what war sounded like until it arrived at her door in the form of smoke and screaming.</p>
+
+      <p>Her village sat on the edge of a river in South Sudan, a small and quiet place where children played barefoot in the red dust and her mother cooked <em>kisra</em> bread over open flame every morning. Her father was a primary school teacher — the first person in the village to have gone to university. He used to tell Amina: <em>"Your mind is your farm. Water it every day and nothing can starve you."</em> She did not fully understand what he meant then. She would later.</p>
+
+      <p>The attack came without warning in April 2019. Amina remembers grabbing her younger brother Deng, who was only four, and running — running through the sorghum field behind the house, past the water pump, into the bush — without looking back. She would not see her father again. She would not see her home again. She did not know, as she ran, that she was running toward a new life entirely.</p>
+
+      <div class="story-modal-quote">
+        <i class="fa fa-quote-left"></i>
+        <blockquote>"I carried Deng the whole way. He was too scared to cry. I kept telling him, 'Don't cry, don't cry — crying makes you slow.' I don't know where I got those words. Maybe from nowhere. Maybe from needing to be brave for him."</blockquote>
+        <cite>— Amina, now 14</cite>
+      </div>
+
+      <p>After four days of walking and two of sheltering in a church, Amina and Deng were found by a UN convoy near the Sudanese border and brought to Kakuma Refugee Camp in northern Kenya. Their mother arrived two weeks later — she had survived by hiding in a neighbour's well. Their father never came.</p>
+
+      <h3 class="story-modal-subhead"><i class="fa fa-school" style="color:var(--red);"></i> The Day the Classroom Found Her</h3>
+
+      <p>For eight months, Amina barely spoke. Camp workers described her as "present but absent" — sitting in food queues, standing in registration lines, staring at the ground. She stopped eating regularly. She stopped playing. She sat outside her tent every evening holding a small exercise book she had grabbed the night she fled — the only thing she'd taken from her home besides her brother. The book was her father's. His handwriting filled the first half. The second half was empty.</p>
+
+      <p>That was when Miriam, a Hope for Every Child education coordinator, spotted her. Miriam had run Temporary Learning Spaces in Kakuma for six years. She had seen this particular silence before — the silence of a child whose world has been erased. She sat beside Amina for three days in a row without asking anything of her. On the fourth day, she brought two pencils. She placed one beside Amina and began drawing in her own notebook. After a long time, Amina picked up hers.</p>
+
+      <p>"She drew her house," Miriam told our team. "She drew it in detail — the door, the window, the tree next to it. Then she drew a small figure beside the tree and she wrote one word underneath: <em>Baba</em>. Father. That was the first word we ever exchanged."</p>
+
+      <div class="story-modal-photo-row">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80" alt="Children in classroom">
+        <img src="https://images.unsplash.com/photo-1542810104-13345b3ced4e?w=600&auto=format&fit=crop&q=80" alt="Child learning">
+      </div>
+
+      <h3 class="story-modal-subhead"><i class="fa fa-book" style="color:var(--gold);"></i> Learning to Live Again</h3>
+
+      <p>Amina enrolled in the Hope for Every Child Temporary Learning Space the following week. She was placed in a class of 34 children, many of them survivors of violence, most of them behind their expected grade level. The first few weeks were uneven — she would attend, then disappear; engage, then shut down. But something was happening underneath the silence.</p>
+
+      <p>She had taught herself to read from her father's notebook. His lesson plans, his notes, his little diagrams explaining fractions and rainfall and the names of rivers — she had memorized them. When the class reached division in mathematics, Amina quietly raised her hand and corrected the teacher's mistake on the chalkboard. The room went still. The teacher — a young Kenyan man named Odongo — looked at the board, then at Amina, then he smiled and said: "Would you like to show us?"</p>
+
+      <p>She walked to the front of the class and did.</p>
+
+      <div class="story-modal-quote">
+        <i class="fa fa-quote-left"></i>
+        <blockquote>"That was the moment I knew she would be okay," Odongo said. "Not because of the maths. But because she walked to that board like she owned it. Like she remembered who she was."</blockquote>
+        <cite>— Odongo, HFEC Education Volunteer</cite>
+      </div>
+
+      <h3 class="story-modal-subhead"><i class="fa fa-heart" style="color:var(--red);"></i> Five Years Later</h3>
+
+      <p>Today, Amina is fourteen. She speaks three languages: Dinka, Arabic, and English. She completed the Hope for Every Child Junior Teacher Training Programme last December — one of only six students selected from a pool of over eighty — and has returned to Kakuma as a teaching assistant in the same TLS where Miriam first sat beside her with a pencil.</p>
+
+      <p>Her brother Deng, now nine, is one of her students. Every morning she walks with him to the classroom. Every evening she reviews his work by lamplight. She keeps her father's notebook on her desk — its cover worn soft, its pages filled now from front to back. The second half, the empty half, is hers.</p>
+
+      <p>When we asked Amina what she wants for her future, she answered without hesitating: <em>"I want to build a school. A real one, with a roof that doesn't leak. One that stays even when everything else leaves."</em></p>
+
+      <div class="story-modal-quote story-modal-quote--gold">
+        <i class="fa fa-quote-left"></i>
+        <blockquote>"My father used to say: your mind is your farm. I understand now. He was trying to tell me that no soldier, no fire, no war can take away what is already growing inside you."</blockquote>
+        <cite>— Amina Ajak, 14, Kakuma Refugee Camp</cite>
+      </div>
+
+      <div class="story-modal-cta">
+        <p>Stories like Amina's are made possible by donors like you. Every contribution — however small — funds classrooms, teachers, and futures in crisis zones worldwide.</p>
+        <div class="story-modal-cta-buttons">
+          <a href="donate.html" class="btn-primary"><i class="fab fa-bitcoin"></i> Donate to Help Children Like Amina</a>
+          <button class="btn-outline" onclick="closeStoryModal()"><i class="fa fa-times"></i> Close Story</button>
+        </div>
+      </div>
+
+    </div><!-- /story-modal-body -->
+  </div><!-- /story-modal-box -->
+</div>
+
+<style>
+/* ---- STORY MODAL ---- */
+.story-modal-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.story-modal-overlay.open {
+  opacity: 1; pointer-events: all;
+}
+.story-modal-box {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%; max-width: 720px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  transform: translateY(24px) scale(0.97);
+  transition: transform 0.35s cubic-bezier(0.34,1.4,0.64,1);
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.story-modal-overlay.open .story-modal-box {
+  transform: translateY(0) scale(1);
+}
+/* Scrollbar styling */
+.story-modal-box::-webkit-scrollbar { width: 5px; }
+.story-modal-box::-webkit-scrollbar-track { background: #f0f0f0; }
+.story-modal-box::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
+
+.story-modal-close {
+  position: sticky; top: 12px; left: 100%;
+  float: right; margin: 12px 12px 0 0;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.55);
+  color: #fff; font-size: 20px; line-height: 1;
+  cursor: pointer; z-index: 10;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.story-modal-close:hover { background: var(--red); }
+
+.story-modal-hero {
+  position: relative; width: 100%; height: 300px; overflow: hidden;
+  margin-top: -48px; /* pull up under close btn */
+  border-radius: 20px 20px 0 0;
+}
+.story-modal-hero img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  display: block;
+}
+.story-modal-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 28px 28px 24px;
+}
+.story-modal-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 10px; display: block;
+}
+.story-modal-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
+  font-weight: 900; color: #fff; line-height: 1.25; margin: 0;
+}
+
+.story-modal-body {
+  padding: 32px 36px 40px;
+}
+.story-modal-meta {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  font-size: 12px; font-weight: 600; color: var(--mid);
+  margin-bottom: 24px; padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.story-modal-meta span { display: flex; align-items: center; gap: 5px; }
+.story-modal-meta i { color: var(--red); }
+
+.story-modal-lead {
+  font-size: 18px; font-weight: 600; line-height: 1.75;
+  color: var(--dark); margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; font-style: italic;
+}
+.story-modal-body p {
+  font-size: 15.5px; line-height: 1.85; color: #333;
+  margin-bottom: 18px;
+}
+.story-modal-body p em { color: var(--dark); font-style: italic; }
+
+.story-modal-subhead {
+  font-size: 17px; font-weight: 800; color: var(--dark);
+  margin: 32px 0 14px; display: flex; align-items: center; gap: 9px;
+}
+
+.story-modal-quote {
+  background: var(--light);
+  border-left: 4px solid var(--red);
+  border-radius: 0 12px 12px 0;
+  padding: 22px 24px;
+  margin: 28px 0;
+  position: relative;
+}
+.story-modal-quote .fa-quote-left {
+  font-size: 2rem; color: var(--red); opacity: 0.2;
+  position: absolute; top: 14px; left: 16px;
+}
+.story-modal-quote blockquote {
+  font-size: 16px; line-height: 1.75; font-style: italic;
+  color: var(--dark); margin: 0 0 10px; padding-left: 8px;
+}
+.story-modal-quote cite {
+  font-size: 13px; font-weight: 700; color: var(--mid); font-style: normal;
+}
+.story-modal-quote--gold { border-left-color: var(--gold); }
+.story-modal-quote--gold .fa-quote-left { color: var(--gold); }
+
+.story-modal-photo-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  margin: 28px 0;
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+.story-modal-photo-row img {
+  width: 100%; height: 180px; object-fit: cover; display: block;
+  border-radius: var(--radius);
+}
+
+.story-modal-cta {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a0000 100%);
+  border-radius: var(--radius-lg);
+  padding: 32px; margin-top: 36px; text-align: center;
+}
+.story-modal-cta p {
+  color: rgba(255,255,255,0.8); font-size: 15px; margin-bottom: 22px;
+  line-height: 1.75;
+}
+.story-modal-cta-buttons {
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+}
+.story-modal-cta-buttons .btn-outline {
+  border-color: rgba(255,255,255,0.4); color: rgba(255,255,255,0.7);
+}
+.story-modal-cta-buttons .btn-outline:hover {
+  background: rgba(255,255,255,0.1); color: #fff; border-color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  .story-modal-box { border-radius: 16px; }
+  .story-modal-hero { height: 220px; margin-top: -44px; border-radius: 16px 16px 0 0; }
+  .story-modal-body { padding: 20px 20px 32px; }
+  .story-modal-lead { font-size: 16px; }
+  .story-modal-body p { font-size: 14.5px; }
+  .story-modal-photo-row { grid-template-columns: 1fr; }
+  .story-modal-photo-row img { height: 160px; }
+  .story-modal-quote blockquote { font-size: 14.5px; }
+  .story-modal-cta { padding: 24px 18px; }
+  .story-modal-cta-buttons { flex-direction: column; }
+  .story-modal-cta-buttons a, .story-modal-cta-buttons button { width: 100%; justify-content: center; }
+}
+@media(max-width: 400px) {
+  .story-modal-overlay { padding: 0; }
+  .story-modal-box { border-radius: 12px 12px 0 0; max-height: 95vh; }
+}
+</style>
+
+<!-- OUR WORK PILLARS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-heart"></i> What We Do</span>
+      <h2 class="section-title">How We Empower Children</h2>
+      <p class="section-subtitle">Four pillars. One mission: that every child survives, learns, and is protected.</p>
+    </div>
+    <div class="four-col">
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Health pillar image -->
+          <img src="images/vacine.png" alt="Health">
+          <span class="cause-tag" style="background:#D0021B;"><i class="fa fa-heartbeat"></i> Health</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>A Healthy Start in Life</h3>
+          <p>No child should die from preventable causes. Vaccinations, nutrition, maternal health.</p>
+          <a href="work.html#health" class="cause-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Education pillar image -->
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop" alt="Education">
+          <span class="cause-tag" style="background:#F5A623;"><i class="fa fa-book"></i> Education</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Quality Education for All</h3>
+          <p>Learning transforms lives. We close the global learning gap one classroom at a time.</p>
+          <a href="work.html#education" class="cause-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Resilience pillar image -->
+          <img src="images/families22.png" alt="Resilience">
+          <span class="cause-tag" style="background:#16a34a;"><i class="fa fa-seedling"></i> Resilience</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Building Stronger Families</h3>
+          <p>Safety nets, economic support, and disaster preparedness for vulnerable communities.</p>
+          <a href="work.html#resilience" class="cause-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cause-card">
+        <div class="cause-card-img">
+          <!-- REPLACE: Protection pillar image -->
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop" alt="Protection">
+          <span class="cause-tag" style="background:#2563EB;"><i class="fa fa-shield-alt"></i> Protection</span>
+        </div>
+        <div class="cause-card-body">
+          <h3>Protecting Every Child</h3>
+          <p>From violence, exploitation, and abuse. Online and offline. Always.</p>
+          <a href="work.html#protection" class="cause-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMBASSADOR / SUPPORTER -->
+<section class="section-pad section-dark">
+  <div class="container">
+    <div class="section-header center" style="color:#fff;">
+      <span class="eyebrow" style="color:var(--gold);"><i class="fa fa-star"></i> Our Supporters</span>
+      <h2 class="section-title" style="color:#fff;">People Who Stand with Every Child</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">Advocates, philanthropists, and community leaders who have pledged their support for children's rights.</p>
+    </div>
+   <div class="three-col">
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 1 photo -->
+          <img src="images/ren.png" alt="Ren Gill">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Ren Gill</h3>
+          <span class="role">Global Ambassador</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Every child deserves the chance to grow up safe, educated, and loved. I am proud to champion Hope for Every Child."</blockquote>
+        </div>
+      </div>
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 2 photo -->
+          <img src="images/dr.png" alt="Dr. maria Osei">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Dr. maria Osei</h3>
+          <span class="role">Education Advocate &amp; Campaign Partner</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"When we invest in a child's education, we invest in the future of an entire generation. No child left behind."</blockquote>
+        </div>
+      </div>
+      
+      
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 3 photo -->
+          <img src="images/ambasador.png" alt="Eghosa Victory">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Ambassador Lela Brooks</h3>
+          <span class="role">Children's Rights &amp; Protection Advocate</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Children in crisis don't have time for politics. They need us to act — right now, today. That is why I give."</blockquote>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="get-involved.html#advocate" class="btn-outline" style="border-color:var(--gold);color:var(--gold);">
+        <i class="fa fa-hand-holding-heart"></i> Become a Supporter
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="section-pad section-light">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
+      <div>
+        <span class="eyebrow"><i class="fa fa-newspaper"></i> Latest</span>
+        <h2 class="section-title" style="margin-bottom:0;">From the Field</h2>
+      </div>
+      <a href="news.html" style="font-size:14px;font-weight:700;color:var(--red);display:flex;align-items:center;gap:6px;">All News <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="three-col">
+      <article class="news-card">
+        <!-- REPLACE: News image 1 -->
+        <img src="images/sudan.png" alt="Sudan famine">
+        <div class="news-card-body">
+          <span class="news-tag">Famine</span>
+          <div class="news-date"><i class="fa fa-calendar"></i> Apr 21, 2025</div>
+          <h3>Sudan Famine: 700,000 Children on the Brink</h3>
+          <p>The world's worst hunger crisis deepens as conflict blocks aid convoys from reaching starving children.</p>
+          <a href="news.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <!-- REPLACE: News image 2 -->
+        <img src="images/peggy_marco-poverty-1028841_1920.jpg" alt="Afghan children">
+        <div class="news-card-body">
+          <span class="news-tag">Displacement</span>
+          <div class="news-date"><i class="fa fa-calendar"></i> Apr 18, 2025</div>
+          <h3>50,000 Afghan Children Displaced in Two Weeks</h3>
+          <p>A surge of returnees crossing into Afghanistan is overwhelming already-collapsed public services.</p>
+          <a href="news.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <!-- REPLACE: News image 3 -->
+        <img src="images/gaza.png" alt="Gaza aid">
+        <div class="news-card-body">
+          <span class="news-tag">Emergency</span>
+          <div class="news-date"><i class="fa fa-calendar"></i> Apr 17, 2025</div>
+          <h3>Gaza Aid System on the Brink of Collapse</h3>
+          <p>95% of organisations have cut or suspended services since the ceasefire ended, leaving 1M+ children without support.</p>
+          <a href="news.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CRYPTO DONATE CTA -->
+<section class="section-pad section-red">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;color:#fff;">
+    <div>
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7);"><i class="fab fa-bitcoin"></i> Crypto Giving</span>
+      <h2 class="section-title" style="color:#fff;">Your Crypto Reaches Children Instantly</h2>
+      <p style="color:rgba(255,255,255,0.82);font-size:16px;line-height:1.75;margin-bottom:32px;">Fast, borderless, transparent. Bitcoin, Ethereum, USDT, Solana and more. Every transaction is verifiable on the blockchain.</p>
+      <a href="donate.html" class="btn-white"><i class="fab fa-bitcoin"></i> Donate Cryptocurrency Now</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="background:rgba(0,0,0,0.2);border-radius:var(--radius);padding:20px;border:1px solid rgba(255,255,255,0.15);">
+        <i class="fab fa-bitcoin" style="font-size:28px;color:#F7931A;margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:15px;">Bitcoin (BTC)</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px;">Accepted</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.2);border-radius:var(--radius);padding:20px;border:1px solid rgba(255,255,255,0.15);">
+        <i class="fab fa-ethereum" style="font-size:28px;color:#627EEA;margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:15px;">Ethereum (ETH)</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px;">Accepted</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.2);border-radius:var(--radius);padding:20px;border:1px solid rgba(255,255,255,0.15);">
+        <i class="fa fa-dollar-sign" style="font-size:28px;color:#26A17B;margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:15px;">USDT / USDC</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px;">Accepted</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.2);border-radius:var(--radius);padding:20px;border:1px solid rgba(255,255,255,0.15);">
+        <i class="fa fa-coins" style="font-size:28px;color:#9945FF;margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:15px;">Solana + More</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px;">Accepted</div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:768px){
+  .section-red .container { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .section-red .container > div:last-child { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+</style>
+
+<!-- WAYS TO GET INVOLVED -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-hands-helping"></i> Take Action</span>
+      <h2 class="section-title">Ways to Get Involved</h2>
+    </div>
+    <div class="four-col">
+      <a href="donate.html" style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;display:block;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="width:60px;height:60px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fab fa-bitcoin" style="font-size:24px;color:#fff;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:8px;">Donate Crypto</h3>
+        <p style="font-size:14px;color:var(--mid);">Fast, secure, borderless. Send BTC, ETH, SOL and more directly to children's programs.</p>
+      </a>
+      <a href="get-involved.html#volunteer" style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;display:block;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="width:60px;height:60px;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-hands-helping" style="font-size:22px;color:#fff;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:8px;">Volunteer</h3>
+        <p style="font-size:14px;color:var(--mid);">Give your skills and time to children worldwide. Remote and field opportunities available.</p>
+      </a>
+      <a href="get-involved.html#fundraise" style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;display:block;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="width:60px;height:60px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-bullhorn" style="font-size:22px;color:#fff;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:8px;">Fundraise</h3>
+        <p style="font-size:14px;color:var(--mid);">Start a crypto fundraiser and rally your community around children in need.</p>
+      </a>
+      <a href="get-involved.html#advocate" style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;display:block;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="width:60px;height:60px;background:#2563EB;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-fist-raised" style="font-size:22px;color:#fff;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:8px;">Advocate</h3>
+        <p style="font-size:14px;color:var(--mid);">Use your voice to push governments to protect children's rights globally.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Toast container (CSS managed in styles.css) -->
+<div id="toastContainer"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon"><i class="fa fa-heart"></i></div>
+        <div class="footer-logo-text">Hope for Every Child</div>
+      </div>
+      <p>Fighting for children's rights, survival, and a better future worldwide since 1989. A registered international charity operating in 46 countries.</p>
+      <div class="social-row">
+        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>About</h4><a href="about.html">Who We Are</a><a href="about.html#mission">Our Mission</a><a href="about.html#team">Leadership</a><a href="about.html#partners">Partners</a><a href="about.html#reports">Annual Reports</a></div>
+    <div class="footer-col"><h4>Our Work</h4><a href="work.html#health">Health</a><a href="work.html#education">Education</a><a href="work.html#resilience">Resilience</a><a href="work.html#protection">Protection</a><a href="work.html">Where We Work</a></div>
+    <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate Crypto</a><a href="get-involved.html">Volunteer</a><a href="get-involved.html#fundraise">Fundraise</a><a href="get-involved.html#advocate">Advocate</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="news.html">News &amp; Stories</a><a href="#">Press Room</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Hope for Every Child International. Registered Charity No. HEC-98321.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+  </div>
+</footer>
+
+<script>
+// NAV
+function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 70); });
+
+// AMINA STORY MODAL
+function openStoryModal() {
+  const modal = document.getElementById('storyModal');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Scroll modal content to top each time it opens
+  modal.querySelector('.story-modal-box').scrollTop = 0;
+}
+function closeStoryModal(e) {
+  // If called from overlay click, only close when clicking the backdrop itself
+  if (e && e.target !== document.getElementById('storyModal')) return;
+  document.getElementById('storyModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeStoryModal();
+});
+
+// HERO SLIDESHOW
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.dot');
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = n;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+setInterval(() => { goToSlide((currentSlide + 1) % slides.length); }, 5000);
+
+// DONATION TOASTS
+const DEMO_NAMES = [
+  'Amara O.','James K.','Fatima A.','David C.','Ngozi E.',
+  'Michael T.','Aisha B.','Carlos R.','Elena V.','Samuel N.',
+  'Priya M.','Hassan Y.','Sophie L.','Kwame D.','Anna S.',
+  'Ibrahim F.','Maria G.','Luca P.','Zara H.','Kofi A.',
+  'Mei L.','Omar J.','Grace W.','Felix M.','Laila K.',
+  'Ben A.','Tunde O.','Rachel P.','Ahmed S.','Nina B.',
+  'Daniel E.','Victoria J.','Emmanuel O.','Esther A.',
+  'Jason W.','Chinedu N.','Linda K.','Mohammed H.',
+  'Abigail F.','John P.','Blessing E.','Martha C.',
+  'Kevin M.','Deborah T.','George A.','Patricia S.'
+];
+const DEMO_COINS = [
+  { symbol:'BTC',  icon:'fab fa-bitcoin',    color:'#F7931A', range:[0.0003,0.025] },
+  { symbol:'ETH',  icon:'fab fa-ethereum',   color:'#627EEA', range:[0.01,0.8] },
+  { symbol:'USDT', icon:'fa fa-dollar-sign', color:'#26A17B', range:[10,500] },
+  { symbol:'SOL',  icon:'fa fa-coins',       color:'#9945FF', range:[0.1,12] },
+  { symbol:'USDC', icon:'fa fa-circle',      color:'#2775CA', range:[15,400] },
+  { symbol:'BNB',  icon:'fa fa-coins',       color:'#F3BA2F', range:[0.05,8] },
+  { symbol:'XRP',  icon:'fa fa-bolt',        color:'#23292F', range:[50,3000] },
+  { symbol:'ADA',  icon:'fa fa-coins',       color:'#0033AD', range:[100,5000] }
+];
+const DEMO_COUNTRIES = [
+  'Nigeria 🇳🇬','United States 🇺🇸','Germany 🇩🇪','Ghana 🇬🇭',
+  'Canada 🇨🇦','Kenya 🇰🇪','UK 🇬🇧','South Africa 🇿🇦',
+  'Australia 🇦🇺','France 🇫🇷','Brazil 🇧🇷','India 🇮🇳',
+  'UAE 🇦🇪','Netherlands 🇳🇱','Japan 🇯🇵','Singapore 🇸🇬'
+];
+const AVATAR_COLORS = ['#D0021B','#F5A623','#16a34a','#2563EB','#9945FF','#627EEA','#26A17B','#e11d48'];
+
+function randItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function randBetween(a,b){ return Math.random()*(b-a)+a; }
+
+function randTime() {
+  const r = Math.random();
+  if (r < 0.12) return 'just now';
+  if (r < 0.22) return '1 min ago';
+  if (r < 0.34) return Math.floor(randBetween(2,9)) + ' mins ago';
+  if (r < 0.44) return Math.floor(randBetween(10,55)) + ' mins ago';
+  // specific clock times
+  const hours   = [6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11];
+  const minutes = ['00','05','10','15','20','25','30','35','40','45','50','55'];
+  const periods = ['am','pm'];
+  const h = randItem(hours);
+  const m = randItem(minutes);
+  const p = r < 0.65 ? randItem(periods) : (h >= 6 && h <= 11 ? 'am' : 'pm');
+  if (r < 0.65) return `${h}:${m}${p}`;
+  // day-based labels
+  const days = ['Today','Yesterday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const day = randItem(days);
+  if (r < 0.80) return `${day} ${h}:${m}${p}`;
+  return randItem(['2 hrs ago','3 hrs ago','4 hrs ago','5 hrs ago','6 hrs ago','Yesterday','2 days ago']);
+}
+
+function showDonationToast(){
+  const name    = randItem(DEMO_NAMES);
+  const coin    = randItem(DEMO_COINS);
+  const country = randItem(DEMO_COUNTRIES);
+  const color   = randItem(AVATAR_COLORS);
+  const initials= name.split(' ').map(w=>w[0]).join('').toUpperCase();
+  const amount  = randBetween(coin.range[0], coin.range[1]);
+  const fmt     = (coin.symbol==='USDT'||coin.symbol==='USDC')
+                  ? amount.toFixed(2) : amount.toFixed(4);
+  const timeLabel = randTime();
+
+  const toast = document.createElement('div');
+  toast.className = 'donation-toast';
+  toast.innerHTML = `
+    <button class="toast-close" onclick="dismissToast(this.parentElement)"><i class="fa fa-times"></i></button>
+    <div class="toast-avatar" style="background:${color};">${initials}</div>
+    <div class="toast-body">
+      <div class="toast-name">${name} <span style="font-weight:400;color:rgba(255,255,255,0.4);font-size:11px;">· ${country}</span></div>
+      <div class="toast-desc">donated to <strong style="color:rgba(255,255,255,0.75);">Hope for Every Child</strong></div>
+    </div>
+    <div>
+      <div class="toast-amount"><i class="${coin.icon}" style="color:${coin.color};"></i> ${fmt} ${coin.symbol}</div>
+      <div class="toast-time">${timeLabel}</div>
+    </div>
+    <div class="toast-progress"></div>
+  `;
+  toast.style.pointerEvents = 'all';
+
+  const container = document.getElementById('toastContainer');
+  container.appendChild(toast);
+
+  const timer = setTimeout(()=>dismissToast(toast), 5000);
+  toast._timer = timer;
+
+  const all = container.querySelectorAll('.donation-toast:not(.hiding)');
+  if(all.length > 4){ dismissToast(all[0]); }
+}
+
+function dismissToast(toast){
+  if(!toast || toast.classList.contains('hiding')) return;
+  clearTimeout(toast._timer);
+  toast.classList.add('hiding');
+  setTimeout(()=>{ if(toast.parentElement) toast.parentElement.removeChild(toast); }, 420);
+}
+
+setTimeout(()=>{
+  showDonationToast();
+  function scheduleNext(){
+    const delay = Math.floor(Math.random()*4000)+4000;
+    setTimeout(()=>{ showDonationToast(); scheduleNext(); }, delay);
+  }
+  scheduleNext();
+}, 2000);
+</script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+t<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate with Crypto – Hope for Every Child</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.ambassador-quote-box { padding: 48px; }
+@media(max-width:640px){
+  .trust-badges-grid{grid-template-columns:1fr!important;}
+  .donate-hero-wrap{padding:110px 16px 50px;}
+  .progress-wrap{padding:20px;}
+  .tab-nav{gap:3px;}
+  .ambassador-quote-box { padding: 28px 20px; }
+}
+@media(max-width:768px){
+  .trust-badges-grid{grid-template-columns:1fr 1fr!important;}
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fa fa-heart"></i></div>
+      <div class="logo-text">Hope for Every Child<span>International</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="news.html">News</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html" class="btn-donate active" style="background:var(--red-dark);"><i class="fab fa-bitcoin"></i> Donate Crypto</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">About Us</a><a href="work.html">Our Work</a><a href="news.html">News</a><a href="get-involved.html">Get Involved</a><a href="donate.html"><i class="fab fa-bitcoin"></i> Donate with Crypto</a>
+  </div>
+</nav>
+
+<!-- DONATE HERO -->
+<div class="donate-hero-wrap">
+  <div class="donate-hero-inner">
+    <div style="font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px;"><i class="fa fa-lock"></i> Transparent · Borderless · Instant</div>
+    <h1>Give with Cryptocurrency</h1>
+    <p>Every transaction is verifiable on the blockchain. 98% of all donations go directly to children's programs worldwide. Fast, secure, tax-deductible.</p>
+    <div class="crypto-badges">
+      <span class="crypto-badge-pill"><i class="fab fa-bitcoin" style="color:#F7931A;"></i> Bitcoin</span>
+      <span class="crypto-badge-pill"><i class="fab fa-ethereum" style="color:#627EEA;"></i> Ethereum</span>
+      <span class="crypto-badge-pill"><i class="fa fa-dollar-sign" style="color:#26A17B;"></i> USDT</span>
+      <span class="crypto-badge-pill"><i class="fa fa-circle" style="color:#2775CA;"></i> USDC</span>
+      <span class="crypto-badge-pill"><i class="fa fa-coins" style="color:#9945FF;"></i> Solana</span>
+      <span class="crypto-badge-pill"><i class="fa fa-water" style="color:#00AAE4;"></i> XRP</span>
+    </div>
+  </div>
+</div>
+
+<section class="section-pad">
+  <div class="container" style="max-width:960px;">
+
+    <!-- TRUST BADGES -->
+    <div class="trust-badges-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px;">
+      <div style="background:var(--light);border-radius:var(--radius);padding:20px;text-align:center;">
+        <i class="fa fa-shield-alt" style="font-size:24px;color:var(--red);margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:14px;margin-bottom:4px;">Blockchain Verified</div>
+        <div style="font-size:12px;color:var(--mid);">Every donation publicly traceable on-chain</div>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius);padding:20px;text-align:center;">
+        <i class="fa fa-certificate" style="font-size:24px;color:var(--red);margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:14px;margin-bottom:4px;">Tax-Deductible</div>
+        <div style="font-size:12px;color:var(--mid);">Official receipts issued within 5 business days</div>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius);padding:20px;text-align:center;">
+        <i class="fa fa-hand-holding-heart" style="font-size:24px;color:var(--red);margin-bottom:8px;display:block;"></i>
+        <div style="font-weight:800;font-size:14px;margin-bottom:4px;">98% to Programs</div>
+        <div style="font-size:12px;color:var(--mid);">Near-zero overhead on crypto donations</div>
+      </div>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-wrap">
+      <div class="progress-header">
+        <div>
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--mid);margin-bottom:6px;"><i class="fa fa-exclamation-circle" style="color:var(--red);"></i> 2025 Emergency Appeal</div>
+          <div class="progress-title">Help 15.9 Million Children in Crisis</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="progress-amount">$4.2M</div>
+          <div style="font-size:13px;color:var(--mid);">raised of $10M goal</div>
+        </div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" style="width:42%"></div></div>
+      <div class="progress-meta">
+        <span><i class="fa fa-users"></i> 2,841 donors</span>
+        <span><i class="fa fa-percent"></i> 42% funded</span>
+        <span><i class="fa fa-clock"></i> 127 days remaining</span>
+      </div>
+    </div>
+
+    <!-- INFO BOX -->
+    <div class="note-box" style="margin-bottom:36px;border-left-color:var(--red);background:#fff8f8;">
+      <strong style="display:flex;align-items:center;gap:8px;margin-bottom:6px;color:var(--red);"><i class="fa fa-info-circle"></i> How to Donate</strong>
+      Copy the wallet address below for your chosen cryptocurrency, open your wallet app, and send your donation. After sending, email <strong>hopeforeverychild1989@yahoo.com</strong> with your transaction hash to receive a tax receipt.
+    </div>
+
+    <!-- TABS -->
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('btc',this)"><i class="fab fa-bitcoin" style="color:#F7931A;"></i> Bitcoin</button>
+      <button class="tab-btn" onclick="switchTab('eth',this)"><i class="fab fa-ethereum" style="color:#627EEA;"></i> Ethereum</button>
+      <button class="tab-btn" onclick="switchTab('stable',this)"><i class="fa fa-dollar-sign" style="color:#26A17B;"></i> Stablecoins</button>
+      <button class="tab-btn" onclick="switchTab('other',this)"><i class="fa fa-coins"></i> Other Coins</button>
+    </div>
+
+    <!-- BTC -->
+    <div id="tab-btc" class="tab-content active">
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#F7931A;"><i class="fab fa-bitcoin"></i></div>
+          <div><h3>Bitcoin (BTC)</h3><div class="network">Bitcoin Mainnet · 3 confirmations required</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Send Bitcoin to our official BTC wallet address below.</p>
+        <div class="address-box" id="btc-addr">bc1qanhy030ymwf2km7a0djjj8vaqnh7l0vfu032ra</div>
+        <button class="copy-btn" onclick="copyAddr('btc-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-exclamation-triangle"></i> Only send BTC on the Bitcoin Mainnet. Sending from other networks will result in permanent loss.</div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#8DC351;"><i class="fab fa-bitcoin"></i></div>
+          <div><h3>Bitcoin Cash (BCH)</h3><div class="network">Bitcoin Cash Mainnet · 1 confirmation</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Lower fees and faster confirmation than BTC.</p>
+        <div class="address-box" id="bch-addr">qqt78pdj5h5edjle2x6dywn9vurgafw72c9cv86c94</div>
+        <button class="copy-btn" onclick="copyAddr('bch-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-info-circle"></i> Ensure you are sending BCH, not BTC, to this address.</div>
+      </div>
+    </div>
+
+    <!-- ETH -->
+    <div id="tab-eth" class="tab-content">
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#627EEA;"><i class="fab fa-ethereum"></i></div>
+          <div><h3>Ethereum (ETH)</h3><div class="network">Ethereum Mainnet · ERC-20 compatible</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Send ETH or any ERC-20 token to this address.</p>
+        <div class="address-box" id="eth-addr">0x17ac596c77913596325a70Ca18D2eEe24d999665</div>
+        <button class="copy-btn" onclick="copyAddr('eth-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-exclamation-triangle"></i> Ethereum Mainnet only. Do not send from Layer 2 networks (Arbitrum, Optimism) directly.</div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#8247E5;"><i class="fa fa-gem"></i></div>
+          <div><h3>Polygon (MATIC)</h3><div class="network">Polygon Mainnet · Ultra-low fees</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Low-cost donations via the Polygon network.</p>
+        <div class="address-box" id="matic-addr">0x17ac596c77913596325a70Ca18D2eEe24d999665</div>
+        <button class="copy-btn" onclick="copyAddr('matic-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-info-circle"></i> Select Polygon network in your wallet before sending.</div>
+      </div>
+    </div>
+
+    <!-- STABLECOINS -->
+    <div id="tab-stable" class="tab-content">
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#26A17B;"><i class="fa fa-dollar-sign"></i></div>
+          <div><h3>Tether (USDT)</h3><div class="network">ERC-20 (Ethereum) · TRC-20 (Tron)</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Donate in USDT — a stable, USD-pegged cryptocurrency.</p>
+        <div class="address-box" id="usdt-addr">THZGK4UqeDCn5JBkmqiBQ5JAZ3Lhniu5bA</div>
+        <button class="copy-btn" onclick="copyAddr('usdt-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-info-circle"></i> Select the correct network (ERC-20 or TRC-20) in your wallet before sending.</div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#2775CA;"><i class="fa fa-circle"></i></div>
+          <div><h3>USD Coin (USDC)</h3><div class="network">ERC-20 · Fully regulated & audited</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Donate in USDC — fully backed, with regular reserve audits.</p>
+        <div class="address-box" id="usdc-addr">0x17ac596c77913596325a70Ca18D2eEe24d999665</div>
+        <button class="copy-btn" onclick="copyAddr('usdc-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-info-circle"></i> Ethereum Mainnet only for USDC donations.</div>
+      </div>
+    </div>
+
+    <!-- OTHER -->
+    <div id="tab-other" class="tab-content">
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#9945FF;"><i class="fa fa-coins"></i></div>
+          <div><h3>Solana (SOL)</h3><div class="network">Solana Mainnet · Near-instant, near-zero fees</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">The fastest, cheapest way to donate crypto.</p>
+        <div class="address-box" id="sol-addr">B8GZFqB8bzkUQTLypG9KgN6VMaxekuRW3QrGM67Evgqk</div>
+        <button class="copy-btn" onclick="copyAddr('sol-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-info-circle"></i> Solana Mainnet only. Ideal for small donations due to near-zero gas fees.</div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card-header">
+          <div class="crypto-icon" style="background:#00AAE4;"><i class="fa fa-water"></i></div>
+          <div><h3>XRP (Ripple)</h3><div class="network">XRP Ledger · Near-instant settlement</div></div>
+        </div>
+        <p style="font-size:14px;color:var(--mid);margin-bottom:4px;">Send XRP for near-instant, ultra-low cost transfers.</p>
+        <div class="address-box" id="xrp-addr">rnCs3LuqeWawo9r9WQScdjPjw2WSkQpro8</div>
+        <div style="margin-bottom:10px;padding:10px 14px;background:#fff3cd;border-radius:6px;font-size:13px;font-weight:700;color:#856404;display:flex;align-items:center;gap:8px;"><i class="fa fa-exclamation-triangle"></i> Destination Tag Required: <strong>12345678</strong></div>
+        <button class="copy-btn" onclick="copyAddr('xrp-addr',this)"><i class="fa fa-copy"></i> Copy Address</button>
+        <div class="note-box"><i class="fa fa-exclamation-triangle" style="color:#d97706;"></i> <strong>Always include Destination Tag: 12345678.</strong> XRP sent without the destination tag cannot be attributed and may be lost.</div>
+      </div>
+    </div>
+
+    <!-- WHAT YOUR DONATION DOES -->
+    <div style="margin-top:60px;">
+      <span class="eyebrow"><i class="fa fa-hand-holding-heart"></i> Your Impact</span>
+      <h2 class="section-title">What Your Donation Does</h2>
+      <ul class="impact-list">
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $10</span><span>Provides a week of nutritious school meals for one child</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $25</span><span>Supplies a full set of school materials for one child for a year</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $50</span><span>Vaccinates 10 children against preventable, deadly diseases</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $100</span><span>Funds emergency food aid for a displaced family for one month</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $500</span><span>Trains a community health worker serving hundreds of children</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $1,000</span><span>Sets up a Temporary Learning Space for 40 children in a crisis zone</span></li>
+        <li><span class="amt"><i class="fab fa-bitcoin" style="font-size:12px;"></i> $5,000</span><span>Funds a mobile health clinic operating for a full month in a conflict area</span></li>
+      </ul>
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-top:60px;">
+      <span class="eyebrow"><i class="fa fa-question-circle"></i> FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is my crypto donation tax-deductible? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">Yes. Hope for Every Child is a registered 501(c)(3) nonprofit. Crypto donations are treated as property donations at fair market value on the date of receipt. Email us your transaction hash for an official receipt within 5 business days. Please consult a tax advisor for personal guidance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How do I get a receipt? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">After sending, email hopeforeverychild1989@yahoo.com with your transaction hash and donation amount. Our team verifies the transaction on-chain and issues a formal tax receipt within 5 business days.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What happens to the crypto after I donate? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">We promptly convert crypto to USD (or local currency) to minimize market risk and speed up program delivery. All conversions and expenditures are disclosed in our annual financial reports, which are publicly available.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Can I donate anonymously? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">Yes. Blockchain transactions are pseudonymous — you are not required to share your identity to donate. If you wish to receive a tax receipt, you will need to contact us with your transaction details. Your personal information is never sold or shared.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is there a minimum donation? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">We welcome donations of any size. We suggest a minimum equivalent to $5 USD to ensure your donation exceeds typical network transaction fees. For very small amounts, we recommend stablecoins (USDT, USDC) on the Polygon network for the lowest fees.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Are the wallet addresses verified and secure? <i class="fa fa-chevron-down"></i></div>
+        <div class="faq-a">Yes. All wallet addresses listed are official Hope for Every Child organizational wallets, audited annually by our financial partners. Always verify addresses on our official website at hopeforeverychild.org before sending. We will never ask for your private key or seed phrase.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AMBASSADOR ENDORSEMENT -->
+<section class="section-pad section-dark">
+  <div class="container" style="max-width:800px;text-align:center;">
+    <span class="eyebrow" style="color:var(--gold);justify-content:center;display:flex;align-items:center;gap:7px;"><i class="fa fa-star"></i> Supporter Message</span>
+    <h2 class="section-title" style="color:#fff;margin-bottom:28px;">A Word from Our Ambassador</h2>
+    <div class="ambassador-quote-box" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);position:relative;">
+      <i class="fa fa-quote-left" style="font-size:3rem;color:var(--red);opacity:0.3;position:absolute;top:24px;left:32px;"></i>
+      <p style="font-size:19px;color:rgba(255,255,255,0.85);line-height:1.8;font-style:italic;position:relative;z-index:1;">"I have seen first-hand what happens when a child gets the support they need — they don't just survive, they soar. Cryptocurrency gives us the chance to make this happen instantly, for any child, anywhere in the world. Please donate today."</p>
+      <!-- REPLACE: Ambassador photo — swap the src URL below -->
+      <div style="margin-top:28px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+        <img src="images/ren.png" alt="Eghosa Victory" style="width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--red);flex-shrink:0;">
+        <div style="text-align:left;min-width:0;">
+          <div style="font-weight:800;color:#fff;font-size:16px;">Ren Gill</div>
+          <div style="font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:normal;word-break:break-word;">Global Ambassador, Hope for Every Child</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><div class="footer-logo-icon"><i class="fa fa-heart"></i></div><div class="footer-logo-text">Hope for Every Child</div></div>
+      <p>Fighting for children's rights, survival, and a better future worldwide since 1989.</p>
+      <div class="social-row"><a href="#" class="social-btn"><i class="fab fa-twitter"></i></a><a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-btn"><i class="fab fa-instagram"></i></a><a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a></div>
+    </div>
+    <div class="footer-col"><h4>About</h4><a href="about.html">Who We Are</a><a href="about.html#mission">Our Mission</a><a href="about.html#team">Leadership</a><a href="about.html#partners">Partners</a></div>
+    <div class="footer-col"><h4>Our Work</h4><a href="work.html#health">Health</a><a href="work.html#education">Education</a><a href="work.html#resilience">Resilience</a><a href="work.html#protection">Protection</a></div>
+    <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate Crypto</a><a href="get-involved.html">Volunteer</a><a href="get-involved.html#fundraise">Fundraise</a><a href="get-involved.html#advocate">Advocate</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="news.html">News</a><a href="#">Press Room</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Hope for Every Child International. Registered Charity No. HEC-98321.</p><div style="display:flex;gap:20px;"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+
+<script>
+function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 70); });
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+function copyAddr(id, btn) {
+  const text = document.getElementById(id).innerText.trim();
+  navigator.clipboard.writeText(text).then(() => {
+    btn.innerHTML = '<i class="fa fa-check"></i> Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.innerHTML = '<i class="fa fa-copy"></i> Copy Address'; btn.classList.remove('copied'); }, 2500);
+  });
+}
+function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+</script>
+</body>
+</html>

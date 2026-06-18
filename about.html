@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us – Hope for Every Child</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fa fa-heart"></i></div>
+      <div class="logo-text">Hope for Every Child<span>International</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="about.html" class="active">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="news.html">News</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html" class="btn-donate"><i class="fab fa-bitcoin"></i> Donate Crypto</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a>
+    <a href="work.html"><i class="fa fa-hands-helping"></i> Our Work</a>
+    <a href="news.html"><i class="fa fa-newspaper"></i> News</a>
+    <a href="get-involved.html"><i class="fa fa-users"></i> Get Involved</a>
+    <a href="donate.html"><i class="fab fa-bitcoin"></i> Donate with Crypto</a>
+  </div>
+</nav>
+
+<!-- ABOUT PAGE HERO — VIDEO BACKGROUND -->
+<!-- ================================================================
+     TO REPLACE THE HERO VIDEO:
+     Change the src attribute on the <video> tag below to your own
+     video file path or URL, e.g.:
+       src="your-video.mp4"
+     For best results use an MP4 file, landscape orientation.
+     The overlay darkens it so text stays readable.
+     ================================================================ -->
+<section class="about-video-hero">
+  <video class="about-hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&auto=format&fit=crop&q=80">
+    <!-- REPLACE VIDEO: change src to your own video file -->
+    <source src="images/gettyimages-667562709-640_adpp.mp4" type="video/mp4">
+    <!-- Fallback if video doesn't load: the poster image shows -->
+  </video>
+  <div class="about-hero-overlay"></div>
+  <div class="about-hero-content">
+    <div class="page-hero-eyebrow"><i class="fa fa-heart"></i> Our Story</div>
+    <h1>About Hope for Every Child</h1>
+    <p>For over 35 years, we've fought for children who cannot fight for themselves — in classrooms, clinics, conflict zones, and the halls of power.</p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section-pad" id="mission">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow"><i class="fa fa-flag"></i> Our Mission</span>
+      <h2 class="section-title">Driven by One Belief: Every Child Matters</h2>
+      <p style="font-size:16px;color:var(--mid);line-height:1.8;margin-bottom:18px;">Hope for Every Child is a global humanitarian organization dedicated to improving the lives of the world's most vulnerable children. Founded in 1989, we work in 46 countries to ensure every child has the right to survive, learn, be protected, and have a voice.</p>
+      <p style="font-size:16px;color:var(--mid);line-height:1.8;margin-bottom:18px;">We hold governments and institutions accountable. We work with communities — not for them — because lasting change must come from within.</p>
+      <p style="font-size:16px;color:var(--mid);line-height:1.8;margin-bottom:28px;">We believe modern giving tools — including cryptocurrency — are critical to reaching children faster, with more transparency than ever before.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="donate.html" class="btn-primary"><i class="fab fa-bitcoin"></i> Donate Now</a>
+        <a href="work.html" class="btn-outline"><i class="fa fa-arrow-right"></i> See Our Work</a>
+      </div>
+    </div>
+    <div>
+      <!-- REPLACE IMAGE: Mission section image -->
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&auto=format&fit=crop&q=80" alt="Children" class="img-round" style="width:100%;">
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-pad section-light">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-chart-bar"></i> Our Impact</span>
+      <h2 class="section-title">Our Impact in Numbers</h2>
+    </div>
+    <div class="about-stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="stat-box"><span class="big">35+</span><span class="lbl">Years of Service</span></div>
+      <div class="stat-box"><span class="big">15.9M</span><span class="lbl">Children Reached 2024</span></div>
+      <div class="stat-box"><span class="big">46</span><span class="lbl">Countries Active</span></div>
+      <div class="stat-box"><span class="big">25,000+</span><span class="lbl">Staff &amp; Volunteers</span></div>
+      <div class="stat-box"><span class="big">$2.8B</span><span class="lbl">Invested in Children</span></div>
+      <div class="stat-box"><span class="big">98%</span><span class="lbl">Funds Go to Programs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section-pad" id="values">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-star"></i> What We Stand For</span>
+      <h2 class="section-title">Our Core Values</h2>
+    </div>
+    <div class="four-col">
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;">
+        <div style="width:56px;height:56px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-balance-scale" style="color:#fff;font-size:22px;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:10px;">Accountability</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.65;">Every dollar is tracked. Every result is reported. We answer to the children we serve.</p>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;">
+        <div style="width:56px;height:56px;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-handshake" style="color:#fff;font-size:22px;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:10px;">Collaboration</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.65;">We partner with local communities, governments, and global agencies to multiply impact.</p>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;">
+        <div style="width:56px;height:56px;background:#2563EB;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-lightbulb" style="color:#fff;font-size:22px;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:10px;">Innovation</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.65;">From crypto donations to digital classrooms, we embrace new tools that help children faster.</p>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:36px 24px;text-align:center;">
+        <div style="width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-rocket" style="color:#fff;font-size:22px;"></i></div>
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:10px;">Ambition</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.65;">We dream of a world where not a single child is left behind — and we work relentlessly to get there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMBASSADORS -->
+<section class="section-pad section-dark" id="ambassadors">
+  <div class="container">
+    <div class="section-header center" style="color:#fff;">
+      <span class="eyebrow" style="color:var(--gold);"><i class="fa fa-star"></i> Supporters</span>
+      <h2 class="section-title" style="color:#fff;">Our Ambassadors &amp; Supporters</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.6);">Leaders, philanthropists, and advocates who have pledged their voices and resources to children worldwide.</p>
+    </div>
+    <div class="three-col">
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 1 photo -->
+          <img src="images/ren.png" alt="Ren Gill">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Ren Gill</h3>
+          <span class="role">Global Ambassador</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Every child deserves the chance to grow up safe, educated, and loved. I am proud to champion Hope for Every Child."</blockquote>
+        </div>
+      </div>
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 2 photo -->
+          <img src="images/dr.png" alt="Dr. maria Osei">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Dr. maria Osei</h3>
+          <span class="role">Education Advocate &amp; Campaign Partner</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"When we invest in a child's education, we invest in the future of an entire generation. No child left behind."</blockquote>
+        </div>
+      </div>
+      
+      
+      <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
+        <div class="ambassador-img">
+          <!-- REPLACE: Ambassador 3 photo -->
+          <img src="images/ambasador.png" alt="Eghosa Victory">
+        </div>
+        <div class="ambassador-body">
+          <h3 style="color:#fff;">Ambassador Lela Brooks</h3>
+          <span class="role">Children's Rights &amp; Protection Advocate</span>
+          <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Children in crisis don't have time for politics. They need us to act — right now, today. That is why I give."</blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP TEAM -->
+<section class="section-pad" id="team">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-users"></i> Leadership</span>
+      <h2 class="section-title">Our Team</h2>
+      <p class="section-subtitle" style="margin:8px auto 0;">Experienced leaders dedicated to children's rights across health, education, and humanitarian response.</p>
+    </div>
+    <div class="about-team-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="team-card">
+        <!-- REPLACE: Team member 1 photo -->
+        <img src="images/team.png" alt="CEO">
+        <div class="team-body"><h4>Dr. kathy Jones</h4><span class="role">Chief Executive Officer</span></div>
+      </div>
+      <div class="team-card">
+        <!-- REPLACE: Team member 2 photo -->
+        <img src="images/drman.png" alt="COO">
+        <div class="team-body"><h4>Dr. Michael Harrington</h4><span class="role">Chief Operating Officer</span></div>
+      </div>
+      <div class="team-card">
+        <!-- REPLACE: Team member 3 photo -->
+        <img src="images/man33.png" alt="Programs Director">
+        <div class="team-body"><h4>Sam Pitt</h4><span class="role">Director of Programs</span></div>
+      </div>
+      <div class="team-card">
+        <!-- REPLACE: Team member 4 photo -->
+        <img src="images/manabasaa.png" alt="CFO">
+        <div class="team-body"><h4>James Grey</h4><span class="role">Chief Financial Officer</span></div>
+      </div>
+      <div class="team-card">
+        <!-- REPLACE: Team member 5 photo -->
+        <img src="images/drdr.png" alt="Advocacy">
+        <div class="team-body"><h4>Dr.Elena Vasquez</h4><span class="role">Head of Global Advocacy</span></div>
+      </div>
+      <div class="team-card">
+        <!-- REPLACE: Team member 6 photo -->
+        <img src="images/drman55.png" alt="Emergency">
+        <div class="team-body"><h4>Dr. Sam Ntale</h4><span class="role">Director of Emergency Response</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section-pad section-light" id="partners">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-globe"></i> Partnerships</span>
+      <h2 class="section-title">Our Partners</h2>
+      <p class="section-subtitle" style="margin:8px auto 0;">We work with UN agencies, governments, and private sector partners to maximise impact for children.</p>
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fa fa-globe" style="color:var(--red);"></i>UNICEF</div>
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fa fa-hospital" style="color:var(--red);"></i>WHO</div>
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fa fa-university" style="color:var(--red);"></i>World Bank</div>
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fa fa-flag" style="color:var(--red);"></i>USAID</div>
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fa fa-star" style="color:var(--red);"></i>EU Humanitarian Aid</div>
+      <div style="background:#fff;padding:20px 36px;border-radius:var(--radius);box-shadow:var(--shadow);font-weight:800;font-size:15px;color:var(--mid);display:flex;align-items:center;gap:8px;"><i class="fab fa-google" style="color:var(--red);"></i>Google.org</div>
+    </div>
+  </div>
+</section>
+
+<!-- ANNUAL REPORTS -->
+<section class="section-pad" id="reports">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow"><i class="fa fa-file-alt"></i> Transparency</span>
+      <h2 class="section-title">Annual Reports</h2>
+      <p class="section-subtitle" style="margin:8px auto 0;">We are committed to full transparency. See exactly how donations are used.</p>
+    </div>
+    <div class="about-reports-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:800px;margin:0 auto;">
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:32px;text-align:center;">
+        <i class="fa fa-file-pdf" style="font-size:2.4rem;color:var(--red);margin-bottom:12px;display:block;"></i>
+        <div style="font-weight:800;font-size:16px;margin-bottom:4px;">2024 Report</div>
+        <div style="font-size:13px;color:var(--mid);margin-bottom:20px;">Full financial breakdown</div>
+        <a href="#" class="btn-outline" style="font-size:13px;padding:10px 20px;"><i class="fa fa-download"></i> Download</a>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:32px;text-align:center;">
+        <i class="fa fa-file-pdf" style="font-size:2.4rem;color:var(--red);margin-bottom:12px;display:block;"></i>
+        <div style="font-weight:800;font-size:16px;margin-bottom:4px;">2023 Report</div>
+        <div style="font-size:13px;color:var(--mid);margin-bottom:20px;">Full financial breakdown</div>
+        <a href="#" class="btn-outline" style="font-size:13px;padding:10px 20px;"><i class="fa fa-download"></i> Download</a>
+      </div>
+      <div style="background:var(--light);border-radius:var(--radius-lg);padding:32px;text-align:center;">
+        <i class="fa fa-file-pdf" style="font-size:2.4rem;color:var(--red);margin-bottom:12px;display:block;"></i>
+        <div style="font-weight:800;font-size:16px;margin-bottom:4px;">2022 Report</div>
+        <div style="font-size:13px;color:var(--mid);margin-bottom:20px;">Full financial breakdown</div>
+        <a href="#" class="btn-outline" style="font-size:13px;padding:10px 20px;"><i class="fa fa-download"></i> Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon"><i class="fa fa-heart"></i></div>
+        <div class="footer-logo-text">Hope for Every Child</div>
+      </div>
+      <p>Fighting for children's rights, survival, and a better future worldwide since 1989.</p>
+      <div class="social-row">
+        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>About</h4><a href="about.html">Who We Are</a><a href="about.html#mission">Our Mission</a><a href="about.html#team">Leadership</a><a href="about.html#partners">Partners</a><a href="about.html#reports">Annual Reports</a></div>
+    <div class="footer-col"><h4>Our Work</h4><a href="work.html#health">Health</a><a href="work.html#education">Education</a><a href="work.html#resilience">Resilience</a><a href="work.html#protection">Protection</a><a href="work.html">Where We Work</a></div>
+    <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate Crypto</a><a href="get-involved.html">Volunteer</a><a href="get-involved.html#fundraise">Fundraise</a><a href="get-involved.html#advocate">Advocate</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="news.html">News &amp; Stories</a><a href="#">Press Room</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Hope for Every Child International. Registered Charity No. HEC-98321.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+  </div>
+</footer>
+<script>
+function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 70); });
+</script>
+</body>
+</html>
