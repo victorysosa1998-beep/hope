@@ -20,18 +20,6 @@
 .featured-expand p { font-size:15px; color:rgba(255,255,255,0.8); line-height:1.8; margin-bottom:12px; }
 .featured-expand blockquote { border-left:3px solid var(--gold); padding-left:16px; font-style:italic; font-size:15px; color:rgba(255,255,255,0.7); margin:16px 0; }
 </style>
-<style>
-@media(max-width:768px){
-  .news-hero-card img{height:260px!important;}
-  .news-hero-body{padding:20px!important;}
-  .news-hero-body h2{font-size:1.3rem!important;}
-  .filter-bar{gap:6px;}
-  .filter-btn{padding:7px 14px;font-size:12px;}
-}
-@media(max-width:540px){
-  .news-grid-3col{grid-template-columns:1fr!important;}
-}
-</style>
 </head>
 <body>
 <nav id="navbar">
@@ -71,16 +59,14 @@
 
     <!-- ===== FEATURED STORY ===== -->
     <div class="news-hero-card" style="margin-bottom:48px;">
-      <!-- REPLACE: Featured story hero image -->
       <img src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?w=1200&auto=format&fit=crop&q=80" alt="Sudan famine">
       <div class="news-hero-overlay"></div>
       <div class="news-hero-body">
         <span style="display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:3px;margin-bottom:12px;"><i class="fa fa-exclamation-circle"></i> URGENT — FAMINE</span>
-        <div style="font-size:12px;color:rgba(255,255,255,0.65);margin-bottom:10px;display:flex;align-items:center;gap:7px;"><i class="fa fa-calendar"></i> Apr 21, 2025 · 6 min read · <i class="fa fa-map-marker-alt"></i> Sudan</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.65);margin-bottom:10px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;"><i class="fa fa-calendar"></i> Apr 21, 2025 · 6 min read · <i class="fa fa-map-marker-alt"></i> Sudan</div>
         <h2>Sudan: 700,000 Children on the Brink of Starvation</h2>
         <p style="font-size:16px;color:rgba(255,255,255,0.82);max-width:680px;line-height:1.7;margin-top:10px;">The world's worst hunger crisis is deepening as conflict blocks aid convoys. Our teams on the ground describe scenes of desperate need — a race against time.</p>
 
-        <!-- EXPANDED FULL STORY (hidden by default) -->
         <div class="featured-expand" id="featured-full">
           <p>In the Zamzam displacement camp near El Fasher, North Darfur, children as young as two are being admitted to Hope for Every Child's emergency nutrition centers with mid-upper arm circumference (MUAC) readings indicating severe acute malnutrition. Our field teams have documented a 340% surge in cases since January 2025.</p>
           <blockquote>"I have not eaten today. My children have not eaten in two days," said Fatima, a 28-year-old mother of four sheltering in a makeshift tent. "The fighting stopped the trucks from coming. There is nothing here."</blockquote>
@@ -90,7 +76,7 @@
           <p style="font-weight:700;color:rgba(255,255,255,0.9);">Every $50 in crypto donations funds enough RUTF sachets to treat one child with severe acute malnutrition for six weeks.</p>
         </div>
 
-        <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;align-items:center;">
+        <div class="news-hero-actions">
           <button class="read-more-btn" style="color:var(--gold);font-size:14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);padding:10px 20px;border-radius:50px;" onclick="toggleFeatured(this)" id="featuredBtn">
             <i class="fa fa-book-open"></i> Read Full Story
           </button>
@@ -175,7 +161,7 @@
             </div>
             <p>A survey of 43 international and Palestinian aid organisations conducted between March 19 and April 14, 2025 found that 41 of them — 95% — had been forced to suspend or dramatically cut services following the collapse of the ceasefire on March 18. Widespread and indiscriminate bombing has made movement across Gaza extremely dangerous.</p>
             <blockquote>"We cannot reach the children who need us most," said our Gaza Country Director. "Our warehouse was destroyed. Three of our staff were wounded. We are operating on moral debt."</blockquote>
-            <p>The northern Gaza governorate — home to an estimated 400,000 people — has been almost entirely cut off from aid flows. The IPC (Integrated Food Security Phase Classification) has classified the entire Gaza Strip as Phase 5 Catastrophe, with 1.1 million children facing acute malnutrition. Severe acute malnutrition rates in children under 5 have risen 800% since October 2023.</p>
+            <p>The northern Gaza governorate — home to an estimated 400,000 people — has been almost entirely cut off from aid flows. The IPC has classified the entire Gaza Strip as Phase 5 Catastrophe, with 1.1 million children facing acute malnutrition. Severe acute malnutrition rates in children under 5 have risen 800% since October 2023.</p>
             <p>Hope for Every Child has three local partner organisations still operating inside Gaza. They are distributing high-energy biscuits, oral rehydration salts, and emergency health kits under extreme risk. We have lost two local partner staff members since the ceasefire ended.</p>
             <p>We are calling for: (1) an immediate and permanent ceasefire, (2) unconditional humanitarian access for all aid organisations, and (3) an emergency international airlift of therapeutic food and medical supplies. Crypto donations are being converted same-day and transferred directly to our Gaza operational accounts.</p>
           </div>
@@ -199,7 +185,7 @@
             </div>
             <p>At the G20 Finance Ministers' summit in Geneva, Hope for Every Child presented its annual State of the World's Children in Crisis report — a 200-page analysis of humanitarian funding gaps and their direct impact on child mortality, learning loss, and protection failures. The report found that for every $1 invested in child-specific humanitarian programming, $8.30 in long-term development costs are avoided.</p>
             <blockquote>"We are not asking G20 nations to be charitable," said our CEO Dr. Amara Osei in her address. "We are asking them to be economically rational. Children are not a cost — they are the only return on investment that actually matters."</blockquote>
-            <p>The report highlights a $14.6 billion annual funding gap in child-specific humanitarian programming — enough to put every out-of-school child in a crisis zone into a classroom, vaccinate every unimmunised child, and treat every case of severe acute malnutrition currently going untreated. The gap exists not because of lack of need documentation, but because of political prioritisation failures at donor governments.</p>
+            <p>The report highlights a $14.6 billion annual funding gap in child-specific humanitarian programming. The gap exists not because of lack of need documentation, but because of political prioritisation failures at donor governments.</p>
             <p>South Africa and Germany endorsed the doubling commitment at the summit. The United States, UK, and Japan expressed "serious consideration." China abstained from the statement but committed to bilateral child health investments in East Africa.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-4',this)"><i class="fa fa-book-open"></i> Read More</button>
@@ -223,8 +209,7 @@
             <p>In 2019, Amina Lado fled Malakal with her mother and two younger brothers after their home was burned during a militia attack. She was 8 years old. When our education team found her in the Protection of Civilians (PoC) site three weeks later, she had not spoken a single word since the attack. Our child protection counsellors began working with her twice weekly.</p>
             <p>By 2020, Amina had joined our Temporary Learning Space. By 2021, she was consistently the top student in her cohort. By 2023, she had completed our accelerated teacher training programme — the youngest participant ever at age 12.</p>
             <blockquote>"When I was silent, the teachers did not give up on me. They sat with me. They waited. That is what I want to give to these children now — someone who will wait for them," Amina told us.</blockquote>
-            <p>Today, Amina teaches 40 children aged 5–13 in the same PoC site where we first found her. She has requested advanced mathematics materials because, she says, "three of my students are geniuses and I need to keep up with them." Her mother, who works as a community health volunteer trained by our health team, calls her daughter "the miracle I prayed for."</p>
-            <p>Amina's story is not exceptional — it is a template. In 2024, our education programs produced 1,247 trained community teachers across South Sudan, Uganda, and the DRC. Each of them has a story like Amina's.</p>
+            <p>Today, Amina teaches 40 children aged 5–13 in the same PoC site where we first found her. She has requested advanced mathematics materials because, she says, "three of my students are geniuses and I need to keep up with them."</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-5',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -246,8 +231,8 @@
             </div>
             <p>Unusually early and exceptionally heavy pre-monsoon rainfall in northeastern Bangladesh caused catastrophic flooding in the Sylhet and Sunamganj districts beginning April 4, 2025. Within 72 hours, 62 of 80 unions in Sunamganj district were submerged. Our rapid needs assessment documented 218,000 children displaced, 340 schools destroyed or damaged, and 14 children confirmed dead from drowning or snakebite.</p>
             <blockquote>"The water came so fast," said 9-year-old Rifat, sheltering on a raised road embankment with his family. "My school is underwater. My books are underwater. Everything is underwater."</blockquote>
-            <p>Hope for Every Child's Bangladesh emergency team pre-positioned 12,000 family emergency kits (containing water purification tablets, oral rehydration salts, hygiene supplies, and a child-specific emergency kit) in Sylhet district depots in March — a preparedness investment that allowed us to reach 12,000 families within 48 hours of the flooding. Without that pre-positioning, delivery would have taken two to three weeks.</p>
-            <p>Bangladesh experiences flooding every year, but climate science consistently shows the events are becoming more severe and earlier in the calendar. Children under 5 and girls aged 10–17 face disproportionate risks during flood displacement — from waterborne disease, protection risks in crowded shelters, and school dropout that often becomes permanent. Our teams are operating child-friendly spaces in 18 evacuation centres.</p>
+            <p>Hope for Every Child's Bangladesh emergency team pre-positioned 12,000 family emergency kits in Sylhet district depots in March — a preparedness investment that allowed us to reach 12,000 families within 48 hours of the flooding.</p>
+            <p>Our teams are operating child-friendly spaces in 18 evacuation centres.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-6',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -269,10 +254,10 @@
               <span><i class="fa fa-globe"></i> Global</span>
               <span><i class="fa fa-heartbeat"></i> Health</span>
             </div>
-            <p>Hope for Every Child's 2024 Annual Nutrition Report reveals that our programs treated 1,047,000 children for acute malnutrition last year — a 23% increase over 2023 — achieving a 94.2% recovery rate, the highest in our organisation's history. The results are driven by a new integrated community-based management protocol that combines therapeutic food treatment with psychosocial support and caregiver training.</p>
+            <p>Hope for Every Child's 2024 Annual Nutrition Report reveals that our programs treated 1,047,000 children for acute malnutrition last year — a 23% increase over 2023 — achieving a 94.2% recovery rate, the highest in our organisation's history.</p>
             <blockquote>"Treating a child's malnutrition is not enough. We must treat the family's food security simultaneously," said Dr. Lena Mbeki, our Global Nutrition Director. "Our new protocol does both — and the results show it."</blockquote>
-            <p>The five countries with the highest caseloads were Niger (189,000), South Sudan (167,000), Chad (142,000), Somalia (138,000), and Yemen (112,000). In all five, we achieved recovery rates above 92%, exceeding the global Sphere standard of 75%. The remaining 6% of non-recovered cases were primarily children who presented with complicating medical conditions (HIV, tuberculosis, congenital defects) requiring inpatient hospital treatment beyond our program scope.</p>
-            <p>The total cost per child successfully treated was $183 — a figure that includes screening, therapeutic food, caregiver training, and two follow-up home visits. For context, the cost of treating a child hospitalised for complications from severe acute malnutrition is approximately $1,400 — nearly 8 times higher. Early community-based treatment is not just more humane. It is far more cost-effective.</p>
+            <p>The five countries with the highest caseloads were Niger (189,000), South Sudan (167,000), Chad (142,000), Somalia (138,000), and Yemen (112,000). In all five, we achieved recovery rates above 92%, exceeding the global Sphere standard of 75%.</p>
+            <p>The total cost per child successfully treated was $183 — including screening, therapeutic food, caregiver training, and two follow-up home visits.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-7',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -292,10 +277,10 @@
               <span><i class="fa fa-globe"></i> 5 New Countries</span>
               <span><i class="fa fa-book"></i> Education</span>
             </div>
-            <p>The Hope for Every Child Girls' Education Initiative — already operating in 14 countries — expanded to five new countries in March 2025, marking the largest single expansion of the program since its launch in 2015. The new countries — Mozambique, DR Congo, Pakistan, Haiti, and Myanmar — were selected based on a combination of school dropout rates, gender parity gaps, and conflict intensity.</p>
+            <p>The Hope for Every Child Girls' Education Initiative — already operating in 14 countries — expanded to five new countries in March 2025. The new countries were selected based on a combination of school dropout rates, gender parity gaps, and conflict intensity.</p>
             <blockquote>"In northern Mozambique, a girl who completes primary school earns 25% more in adulthood and has 2.2 fewer children than a girl who drops out," said our Education Director. "The data is unambiguous. Keeping girls in school is the single highest-return investment in development."</blockquote>
-            <p>The initiative combines conditional cash transfers to families (to offset the opportunity cost of sending girls to school), menstrual health and hygiene support, safe transport programs, and community engagement with religious and traditional leaders — a model peer-reviewed in The Lancet as "the most evidence-based girls' education program currently operating at scale."</p>
-            <p>In Pakistan, the program will specifically target the Khyber Pakhtunkhwa and Balochistan provinces, where female enrollment at secondary level is below 35%. In Myanmar, it will work through underground education networks operating outside the military junta's school system.</p>
+            <p>The initiative combines conditional cash transfers to families, menstrual health and hygiene support, safe transport programs, and community engagement with religious and traditional leaders.</p>
+            <p>In Pakistan, the program will specifically target the Khyber Pakhtunkhwa and Balochistan provinces, where female enrollment at secondary level is below 35%.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-8',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -317,8 +302,8 @@
             </div>
             <p>Uganda's parliament passed the Children (Amendment) Act 2025 on March 26 — a landmark piece of legislation that criminalises online child sexual exploitation with penalties of up to 15 years imprisonment, mandates age verification systems for social media platforms operating in Uganda, and requires all primary and secondary schools to include internet safety in their curriculum.</p>
             <blockquote>"This law is the result of seven years of work — by our teams, by survivors who bravely testified before parliament, and by journalists who refused to let these crimes stay hidden," said our Uganda Country Director, Grace Nakato. "Today is a day of victory for Uganda's children."</blockquote>
-            <p>Hope for Every Child's Digital Protection team submitted over 2,800 documented cases of online child sexual exploitation to the parliamentary committee examining the legislation, alongside a technical brief on platform accountability mechanisms used in the UK, Australia, and Germany. The parliamentary committee adopted 11 of our 14 specific recommendations verbatim.</p>
-            <p>The law comes into effect on August 1, 2025. We are currently training 1,200 police officers in digital evidence handling and working with the Uganda Communications Commission on implementation guidelines for platforms. The model is already being studied by legislators in Tanzania, Rwanda, and Nigeria as a template for similar legislation.</p>
+            <p>Hope for Every Child's Digital Protection team submitted over 2,800 documented cases of online child sexual exploitation to the parliamentary committee examining the legislation. The parliamentary committee adopted 11 of our 14 specific recommendations verbatim.</p>
+            <p>The law comes into effect on August 1, 2025. We are currently training 1,200 police officers in digital evidence handling.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-9',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -336,7 +321,7 @@
             <div class="story-meta"><span><i class="fa fa-clock"></i> 5 min read</span><span><i class="fa fa-globe"></i> Yemen</span></div>
             <p>Yemen remains one of the world's worst humanitarian crises for children. After ten years of conflict, 2.2 million children under 5 are acutely malnourished — including 540,000 with life-threatening severe acute malnutrition. The UN's 2025 Yemen Humanitarian Response Plan is only 18% funded, forcing agencies including ours to make impossible choices about which programs to cut.</p>
             <blockquote>"We had to close two nutrition stabilisation centres in Hodeidah in February," said our Yemen team leader. "We know children will die as a result. That is not an abstraction. That is a fact we live with."</blockquote>
-            <p>Despite the funding crisis, Hope for Every Child's Yemen teams treated 68,000 children for severe acute malnutrition in Q1 2025, maintained 14 mobile health teams operating in Hajjah, Taiz, Marib, and Hodeidah, and distributed 48,000 emergency food kits. Cryptocurrency donations have been particularly valuable in Yemen because traditional banking channels are severely constrained by the conflict economy — crypto transfers reach our Yemeni operational accounts with no intermediary banking delay.</p>
+            <p>Despite the funding crisis, Hope for Every Child's Yemen teams treated 68,000 children for severe acute malnutrition in Q1 2025, maintained 14 mobile health teams, and distributed 48,000 emergency food kits. Cryptocurrency donations have been particularly valuable in Yemen because traditional banking channels are severely constrained by the conflict economy.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-10',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -344,7 +329,7 @@
 
       <!-- CARD 11 -->
       <article class="news-card hidden" data-cat="impact">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80" alt="Impact story DRC">
+        <img src="images/congo.png" alt="Impact story DRC">
         <div class="news-card-body">
           <span class="news-tag" style="color:#16a34a;">Impact Story</span>
           <div class="news-date"><i class="fa fa-calendar"></i> Mar 3, 2025 · <i class="fa fa-map-marker-alt"></i> DR Congo</div>
@@ -352,10 +337,9 @@
           <p>Abducted at 11, disarmed at 14, Emmanuel is now 19 and training others in conflict resolution.</p>
           <div class="story-expand" id="story-11">
             <div class="story-meta"><span><i class="fa fa-clock"></i> 6 min read</span><span><i class="fa fa-globe"></i> North Kivu, DRC</span></div>
-            <p>Emmanuel was 11 years old when an armed group abducted him from his village in North Kivu, eastern DR Congo. He spent three years as a child soldier before being disarmed in a UN DDR (Disarmament, Demobilisation, and Reintegration) operation in 2020. He arrived at our Hope for Every Child reintegration centre in Goma weighing 32 kilograms, unable to read, and — in his own words — "full of rage and nothing else."</p>
+            <p>Emmanuel was 11 years old when an armed group abducted him from his village in North Kivu, eastern DR Congo. He spent three years as a child soldier before being disarmed in a UN DDR operation in 2020. He arrived at our Hope for Every Child reintegration centre in Goma weighing 32 kilograms, unable to read, and — in his own words — "full of rage and nothing else."</p>
             <blockquote>"At first I did not trust anyone," Emmanuel told us. "I thought kindness was a trick. But they kept being kind. Every day. Until I started to believe it was real."</blockquote>
-            <p>Over four years, Emmanuel progressed through our trauma-informed education program, literacy classes, vocational training (he chose carpentry), and psychosocial counselling. At 17, he voluntarily became a peer mentor to newly arrived former child soldiers. At 18, he was selected for our Youth Peacebuilder Fellowship — a 12-month program training young people in conflict mediation and community dialogue facilitation.</p>
-            <p>Today, 19-year-old Emmanuel has facilitated 14 community dialogues between former combatants and the families of victims in three villages outside Goma. "I cannot undo what I did," he says quietly. "But I can use what I know — about war, about boys who are lost — to stop it from happening to the next one."</p>
+            <p>Over four years, Emmanuel progressed through our trauma-informed education program, literacy classes, vocational training, and psychosocial counselling. Today, 19-year-old Emmanuel has facilitated 14 community dialogues between former combatants and the families of victims in three villages outside Goma.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-11',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -371,9 +355,9 @@
           <p>Gang control of 85% of Port-au-Prince is stopping life-saving oral rehydration treatment from reaching children.</p>
           <div class="story-expand" id="story-12">
             <div class="story-meta"><span><i class="fa fa-clock"></i> 5 min read</span><span><i class="fa fa-globe"></i> Haiti</span></div>
-            <p>A cholera outbreak resurging in Haiti's Artibonite and West departments has killed 47 children under 5 in the six weeks to February 18, 2025 — a preventable tragedy, since cholera is almost never fatal when oral rehydration therapy (ORT) is available. The obstacle is not medicine or knowledge. It is access. Armed gangs controlling Port-au-Prince have blocked aid convoys, looted medical supplies, and killed two healthcare workers attempting to reach affected communities.</p>
+            <p>A cholera outbreak resurging in Haiti's Artibonite and West departments has killed 47 children under 5 in the six weeks to February 18, 2025 — a preventable tragedy, since cholera is almost never fatal when oral rehydration therapy (ORT) is available. Armed gangs controlling Port-au-Prince have blocked aid convoys, looted medical supplies, and killed two healthcare workers attempting to reach affected communities.</p>
             <blockquote>"Cholera kills in hours," said our Haiti Emergency Health Coordinator, Dr. Claudette Pierre. "These children had parents who wanted to save them. They just could not get to us — and we could not get to them."</blockquote>
-            <p>Hope for Every Child is operating through a network of 43 community health volunteers who live inside gang-controlled areas and can move where international staff cannot. These volunteers have distributed 18,000 ORT packets and conducted cholera prevention training with 6,200 families since January. We are calling for urgent international pressure on Haitian authorities to guarantee humanitarian access, and for emergency funding to scale our community health volunteer network to 200 people.</p>
+            <p>Hope for Every Child is operating through a network of 43 community health volunteers who live inside gang-controlled areas and can move where international staff cannot. These volunteers have distributed 18,000 ORT packets and conducted cholera prevention training with 6,200 families since January.</p>
           </div>
           <button class="read-more-btn" onclick="toggleStory('story-12',this)"><i class="fa fa-book-open"></i> Read More</button>
         </div>
@@ -397,8 +381,8 @@
     <span class="eyebrow" style="justify-content:center;display:flex;align-items:center;gap:7px;"><i class="fa fa-envelope"></i> Newsletter</span>
     <h2 class="section-title">Stay Informed</h2>
     <p style="color:var(--mid);margin-bottom:28px;font-size:16px;">Get the latest impact stories, crisis alerts, and campaign updates in your inbox every week.</p>
-    <div style="display:flex;gap:10px;max-width:460px;margin:0 auto;" id="newsletterWrap">
-      <input type="email" id="newsletterEmail" placeholder="Your email address" style="flex:1;padding:14px 18px;border:1px solid var(--border);border-radius:6px;font-size:14px;outline:none;font-family:inherit;">
+    <div style="display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;" id="newsletterWrap">
+      <input type="email" id="newsletterEmail" placeholder="Your email address" style="flex:1;min-width:200px;padding:14px 18px;border:1px solid var(--border);border-radius:6px;font-size:14px;outline:none;font-family:inherit;">
       <button class="btn-primary" style="white-space:nowrap;" onclick="subscribeNewsletter(this)"><i class="fa fa-paper-plane"></i> Subscribe</button>
     </div>
     <div id="newsletterSuccess" style="display:none;background:#f0fdf4;border:1px solid #22c55e;border-radius:8px;padding:16px 24px;font-size:15px;font-weight:600;color:#15803d;">
@@ -427,20 +411,16 @@
 function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
 window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 70); });
 
-// Filter stories by category
 function setFilter(btn, cat) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  // Show all first, then hide non-matching visible cards
   document.querySelectorAll('#newsGrid .news-card').forEach(card => {
     const matches = cat === 'all' || card.dataset.cat === cat;
-    // Only show/hide cards that are not in "hidden" state from load-more
-    if (card.classList.contains('hidden')) return; // respect load-more state
+    if (card.classList.contains('hidden')) return;
     card.style.display = matches ? 'block' : 'none';
   });
 }
 
-// Expand / collapse individual story
 function toggleStory(id, btn) {
   const el = document.getElementById(id);
   const isOpen = el.style.display === 'block';
@@ -451,7 +431,6 @@ function toggleStory(id, btn) {
   if (!isOpen) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-// Expand / collapse the featured story
 function toggleFeatured(btn) {
   const el = document.getElementById('featured-full');
   const isOpen = el.style.display === 'block';
@@ -462,7 +441,6 @@ function toggleFeatured(btn) {
   if (!isOpen) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-// Load more stories
 function loadMoreStories(btn) {
   const hidden = document.querySelectorAll('#newsGrid .news-card.hidden');
   let shown = 0;
@@ -470,7 +448,6 @@ function loadMoreStories(btn) {
     if (shown < 6) {
       card.classList.remove('hidden');
       card.style.display = 'block';
-      // Animate in
       card.style.opacity = '0';
       card.style.transform = 'translateY(20px)';
       card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
@@ -478,14 +455,12 @@ function loadMoreStories(btn) {
       shown++;
     }
   });
-  // If no more hidden, hide the button
   const remaining = document.querySelectorAll('#newsGrid .news-card.hidden').length;
   if (remaining === 0) {
     document.getElementById('loadMoreWrap').style.display = 'none';
   }
 }
 
-// Newsletter subscription
 function subscribeNewsletter(btn) {
   const email = document.getElementById('newsletterEmail').value.trim();
   if (!email || !email.includes('@')) {

@@ -25,7 +25,11 @@
     <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="about.html">About Us</a><a href="work.html">Our Work</a><a href="news.html">News</a><a href="get-involved.html">Get Involved</a><a href="donate.html"><i class="fab fa-bitcoin"></i> Donate with Crypto</a>
+    <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a>
+    <a href="work.html"><i class="fa fa-hands-helping"></i> Our Work</a>
+    <a href="news.html"><i class="fa fa-newspaper"></i> News</a>
+    <a href="get-involved.html"><i class="fa fa-users"></i> Get Involved</a>
+    <a href="donate.html"><i class="fab fa-bitcoin"></i> Donate with Crypto</a>
   </div>
 </nav>
 
@@ -44,28 +48,28 @@
       <span style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;display:flex;align-items:center;gap:7px;"><i class="fab fa-bitcoin"></i> Most Impactful</span>
       <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;margin-bottom:16px;color:#fff;">Donate with Cryptocurrency</h2>
       <p style="font-size:16px;color:rgba(255,255,255,0.85);line-height:1.75;margin-bottom:28px;">Fast, borderless, transparent. Your crypto reaches children in need faster than any other method — with near-zero fees and full on-chain accountability.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <div class="crypto-donate-btns">
         <a href="donate.html" class="btn-white"><i class="fab fa-bitcoin"></i> Donate Bitcoin</a>
         <a href="donate.html" class="btn-ghost"><i class="fab fa-ethereum"></i> Donate Ethereum</a>
       </div>
     </div>
     <div class="crypto-badges-grid">
-      <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:6px;">
+      <div class="crypto-badge-item">
         <i class="fab fa-bitcoin" style="font-size:26px;color:#F7931A;"></i>
         <div style="font-weight:800;font-size:15px;color:#fff;">Bitcoin (BTC)</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.6);">Accepted</div>
       </div>
-      <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:6px;">
+      <div class="crypto-badge-item">
         <i class="fab fa-ethereum" style="font-size:26px;color:#627EEA;"></i>
         <div style="font-weight:800;font-size:15px;color:#fff;">Ethereum (ETH)</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.6);">Accepted</div>
       </div>
-      <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:6px;">
+      <div class="crypto-badge-item">
         <i class="fa fa-dollar-sign" style="font-size:26px;color:#26A17B;"></i>
         <div style="font-weight:800;font-size:15px;color:#fff;">USDT / USDC</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.6);">Accepted</div>
       </div>
-      <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:6px;">
+      <div class="crypto-badge-item">
         <i class="fa fa-coins" style="font-size:26px;color:#9945FF;"></i>
         <div style="font-weight:800;font-size:15px;color:#fff;">SOL, XRP + More</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.6);">Accepted</div>
@@ -82,7 +86,7 @@
       <h2 class="section-title">Give Your Time & Skills</h2>
       <p class="section-subtitle" style="margin:8px auto 0;">Whether you're a doctor, teacher, engineer, or communicator — there's a volunteer role for you.</p>
     </div>
-    <div class="three-col" style="margin-bottom:60px;">
+    <div class="three-col volunteer-grid" style="margin-bottom:60px;">
       <div class="involve-option" style="flex-direction:column;">
         <div class="involve-icon-box" style="background:#D0021B;"><i class="fa fa-stethoscope"></i></div>
         <div class="involve-body">
@@ -109,14 +113,14 @@
       </div>
     </div>
 
-      <div style="background:var(--light);border-radius:var(--radius-lg);padding:48px;" id="volunteer-form">
+    <div class="volunteer-form-wrap" id="volunteer-form">
       <div class="section-header">
         <span class="eyebrow"><i class="fa fa-user-plus"></i> Application</span>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;">Apply to Volunteer</h3>
         <p style="color:var(--mid);margin-top:6px;">Our team will respond within 5 business days.</p>
       </div>
 
-      <!-- SUCCESS MESSAGE (hidden until form submitted) -->
+      <!-- SUCCESS MESSAGE -->
       <div id="volunteerSuccess" style="display:none;background:#f0fdf4;border:2px solid #22c55e;border-radius:var(--radius-lg);padding:40px;text-align:center;">
         <div style="width:64px;height:64px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
           <i class="fa fa-check" style="color:#fff;font-size:28px;"></i>
@@ -128,7 +132,7 @@
         </div>
       </div>
 
-      <!-- FORM (hidden after submit) -->
+      <!-- FORM -->
       <div id="volunteerFormInner">
         <div class="form-two">
           <div class="form-group"><label><i class="fa fa-user"></i> First Name</label><input type="text" id="vFirstName" placeholder="John"></div>
@@ -165,9 +169,9 @@
       <h2 class="section-title">Start a Crypto Fundraiser</h2>
       <p class="section-subtitle" style="margin:8px auto 0;">Rally your community around children in need. Start your own campaign in minutes.</p>
     </div>
-    <div class="three-col" style="margin-bottom:40px;">
+    <div class="three-col campaign-grid" style="margin-bottom:40px;">
       <div class="campaign-card">
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&auto=format&fit=crop&q=80" alt="Campaign 1">
+        <img src="images/ren1.png" alt="Campaign 1" style="object-position:center 20%;">
         <div class="campaign-body">
           <h4>Ren's 2026 Tour Donations for Children in Gaza</h4>
           <div class="c-raised">$3,240 raised</div>
@@ -227,33 +231,33 @@
       <span class="eyebrow" style="color:var(--gold);justify-content:center;display:flex;align-items:center;gap:7px;"><i class="fa fa-star"></i> Our Supporters</span>
       <h2 class="section-title" style="color:#fff;">Ambassadors Who Champion This Cause</h2>
     </div>
-    <div class="three-col">
+    <div class="three-col ambassador-grid">
       <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
         <div class="ambassador-img">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=80" alt="Eghosa Victory">
+          <img src="images/ren1.png" alt="Ren Gill" style="object-position:center top;">
         </div>
         <div class="ambassador-body">
-          <h3 style="color:#fff;">Eghosa Victory</h3>
-          <span class="role">Global Ambassador & Lead Donor</span>
+          <h3 style="color:#fff;">Ren Gill</h3>
+          <span class="role">Global Ambassador</span>
           <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Every child deserves to grow up safe and loved. I donate crypto to Hope for Every Child because it is transparent, fast, and life-changing."</blockquote>
         </div>
       </div>
       <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
         <div class="ambassador-img">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80" alt="Eghosa Victory">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80" alt="Martha Jones" style="object-position:center top;">
         </div>
         <div class="ambassador-body">
-          <h3 style="color:#fff;">Eghosa Victory</h3>
+          <h3 style="color:#fff;">Martha Jones</h3>
           <span class="role">Education Advocate & Campaign Partner</span>
           <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Investing in a child's education is investing in the future of the world. No child left behind — not one."</blockquote>
         </div>
       </div>
       <div class="ambassador-card" style="background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);">
         <div class="ambassador-img">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=80" alt="Eghosa Victory">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=80" alt="Victoria Smith" style="object-position:center top;">
         </div>
         <div class="ambassador-body">
-          <h3 style="color:#fff;">Eghosa Victory</h3>
+          <h3 style="color:#fff;">Victoria Smith</h3>
           <span class="role">Children's Rights Advocate</span>
           <blockquote style="border-color:var(--gold);color:rgba(255,255,255,0.65);">"Children in crisis don't have the luxury of waiting. That is why I act — every day, every donation, every voice counts."</blockquote>
         </div>
@@ -270,19 +274,19 @@
       <h2 class="section-title">Corporate Partnerships</h2>
       <p class="section-subtitle" style="margin:8px auto 0;">Partner your brand with the world's most urgent cause. Tailored packages for companies of every size.</p>
     </div>
-    <div class="three-col" style="margin-bottom:40px;">
-      <div style="background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);text-align:center;">
-        <div style="width:56px;height:56px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-users" style="color:#fff;font-size:22px;"></i></div>
+    <div class="three-col corporate-grid" style="margin-bottom:40px;">
+      <div class="corporate-card">
+        <div class="corporate-icon" style="background:var(--red);"><i class="fa fa-users" style="color:#fff;font-size:22px;"></i></div>
         <h3 style="font-size:18px;font-weight:800;margin-bottom:10px;">Employee Giving</h3>
         <p style="font-size:14px;color:var(--mid);line-height:1.65;">Set up automated payroll crypto donations for your entire team. Simple setup, maximum impact.</p>
       </div>
-      <div style="background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);text-align:center;">
-        <div style="width:56px;height:56px;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-times-circle" style="color:#fff;font-size:22px;"></i></div>
+      <div class="corporate-card">
+        <div class="corporate-icon" style="background:#16a34a;"><i class="fa fa-times-circle" style="color:#fff;font-size:22px;"></i></div>
         <h3 style="font-size:18px;font-weight:800;margin-bottom:10px;">Matching Gifts</h3>
         <p style="font-size:14px;color:var(--mid);line-height:1.65;">Double your impact — we match qualifying corporate donations 1:1 for selected campaigns throughout the year.</p>
       </div>
-      <div style="background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);text-align:center;">
-        <div style="width:56px;height:56px;background:#2563EB;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><i class="fa fa-chart-pie" style="color:#fff;font-size:22px;"></i></div>
+      <div class="corporate-card">
+        <div class="corporate-icon" style="background:#2563EB;"><i class="fa fa-chart-pie" style="color:#fff;font-size:22px;"></i></div>
         <h3 style="font-size:18px;font-weight:800;margin-bottom:10px;">Impact Reporting</h3>
         <p style="font-size:14px;color:var(--mid);line-height:1.65;">Detailed quarterly reports on exactly how your partnership is changing children's lives, verified on-chain.</p>
       </div>
@@ -307,6 +311,7 @@
   </div>
   <div class="footer-bottom"><p>© 2025 Hope for Every Child International. Registered Charity No. HEC-98321.</p><div style="display:flex;gap:20px;"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
 </footer>
+
 <script>
 function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
 window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 70); });
@@ -320,7 +325,6 @@ function submitVolunteerForm() {
   const errBox    = document.getElementById('volunteerError');
   const errMsg    = document.getElementById('volunteerErrorMsg');
 
-  // Simple validation
   if (!firstName || !lastName) {
     errMsg.textContent = 'Please enter your first and last name.';
     errBox.style.display = 'block'; return;
@@ -340,16 +344,13 @@ function submitVolunteerForm() {
 
   errBox.style.display = 'none';
 
-  // Simulate a brief loading state on the button
   const btn = event.target;
   btn.disabled = true;
   btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Submitting...';
 
   setTimeout(() => {
-    // Hide form, show success
     document.getElementById('volunteerFormInner').style.display = 'none';
     document.getElementById('volunteerSuccess').style.display  = 'block';
-    // Scroll the success message into view
     document.getElementById('volunteerSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, 1400);
 }
